@@ -1,1 +1,46 @@
 /* 头尾个页面相同样式 */
+/* 版心 */
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    /* 主轴右对齐  justify-content: flex-end */
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    /* background-color: pink; */
+}
+
+.shortcut ul{
+    display: flex;
+    line-height: 52px;
+
+}
+
+.shortcut li a{
+    padding: 0 15px;
+    border-right: 1px solid #999;
+    font-size: 14px;
+    color: #fff;
+}
+
+.shortcut li:last-child a{
+    border-right: none;
+}
+
+.shortcut li .iconfont{
+    margin-right: 4px;
+    /* 垂直图标和字居中 */
+    vertical-align: middle;
+}
+
+.shortcut li:first-child a{
+    color: green;
+}
