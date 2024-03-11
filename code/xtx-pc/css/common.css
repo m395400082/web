@@ -44,3 +44,165 @@
 .shortcut li:first-child a{
     color: green;
 }
+
+/* 头部 */
+.header{
+    display: flex;
+    height: 88px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    /* background-color: pink; */
+}
+
+/* logo */
+.logo{
+    width: 200px;
+    height: 88px;
+    margin-right: 40px;
+    /* background-color: blueviolet; */
+}
+
+.logo a{
+    /* 将 a 标签转换为块级元素 默认为行业元素，添加效果不生效*/
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+}
+
+/* 导航 */
+.nav{
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.nav ul{
+    display: flex;
+}
+
+.nav li{
+    margin-right: 47px;
+}
+
+.nav li a {
+    padding-bottom: 10px;
+}
+
+.nav li a:hover{
+    border-bottom: 2px solid #5eb69c;
+    color: #5eb69c;
+}
+
+/* 搜索 */
+.search {
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.search .iconfont{
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.search input{
+    /* 浏览器优先生效，input标签的默认宽度，所以flex：1不生效 */
+    /* 解决办法：重置input默认宽度为  width:0 */
+    flex: 1;
+    width: 0;
+}
+
+.search input::placeholder{
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* 购物车 */
+.cart{
+    /* 相对定位 */
+    position: relative;
+    margin-top: 32px;
+}
+
+.cart .iconfont{
+    font-size: 24px;
+}
+
+.cart i{
+    /* 绝对定位 */
+    position: absolute;
+    top: 1px;
+    /* right 定位右对齐，如果文字多了会覆盖其他内容 */
+    /* right:1 */
+    /* left 定位左对齐，文字多了，会向右撑开 */
+    left: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fffefe;
+    line-height: 15px;
+}
+
+/* 尾部 */
+.footer{
+    height: 580px;
+    background-color: #f5f5f5;
+}
+
+/* 服务 */
+.service{
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.service ul{
+    display: flex;
+    /* justify-content: space-evenly可以使每个元素之间和元素距离边距的距离都相等 */
+    justify-content: space-evenly;
+}
+
+.service li{
+    display: flex;
+    width: 190px;
+    height: 58px;
+    /* background-color: pink;  */
+}
+
+.service li h5{
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+}
+
+.service li:nth-child(2) h5{
+    background-position: 0 -58px;
+}
+
+.service li:nth-child(3) h5{
+    background-position: 0 -116px;
+}
+
+.service li:last-child h5{
+    background-position: 0 -174px;
+}
+
+.service li p{
+    font-size: 28px;
+    line-height: 58px;
+}
+
+/* 帮助中心 */
+.help{
+    height: 300px;
+    background-color: pink;
+}
+
