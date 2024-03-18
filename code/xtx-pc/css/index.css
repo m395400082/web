@@ -166,3 +166,36 @@
     font-size: 22px;
     margin-left: 3px;
 }
+
+/* 人气推荐 */
+.recommend .bd li{
+    background-color: #fff;
+}
+
+.recommend .bd p{
+    color: #a1a1a1;
+}
+
+/* 热门品牌 */
+.brand{
+    height: 468px;
+    background-color: #f5f5f5;
+    margin-top: 60px;
+}
+
+.brand .wrapper{
+    overflow: hidden;
+    height: 468px;
+    background-color: pink;
+}
+
+.brand .title{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.brand .button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
