@@ -273,9 +273,11 @@
 }
 
 .content .right li{
+    position: relative;
+    overflow: hidden;  /* 为了隐藏绿色 cover */
     width: 242px;
     height: 305px;
-    border: solid 2px #a1a1a1;
+    border: solid 2px #fff;
     padding: 10px 21px 0;
 }
 
@@ -304,6 +306,48 @@
 .content .price span{
     font-size: 22px;
     margin-left: 5px;
+}
+
+.content li .cover{
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: -85px;
+    width: 242px;
+    height: 83px;
+    background-color: #00be9a;
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.content .cover p:nth-child(1){
+    font-size: 18px;    
+}
+
+.content .cover p:nth-child(2){
+    margin: 3px auto 6px;
+
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.content .cover p:nth-child(3){
+    font-size: 13px;
+}
+
+.content .cover p:nth-child(3) .iconfont{
+    font-size: 14px;
+}
+
+/* 鼠标悬停到li，显示cover 改变位置  */
+.content .right li:hover .cover{
+    bottom: 0;
+}
+
+.content .right li:hover{
+    border: 2px solid #00eb9a;
 }
 
 
